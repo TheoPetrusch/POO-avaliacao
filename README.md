@@ -1,2 +1,3 @@
 # POO-avaliacao
-Repositório para a atividade avaliativa de Programação Orientada a Objetos
+Repositório para a atividade avaliativa de Programação Orientada a Objetos.
+Feito usando o intelliJ
