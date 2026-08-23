@@ -1,4 +1,4 @@
-package avaliacao.Estudante;
+package Estudante;
 
 import java.util.Scanner;
 
