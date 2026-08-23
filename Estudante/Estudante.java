@@ -37,6 +37,29 @@ public class Estudante {
         return soma / TAM;
     }
 
+    public double calcularMedia(int[] pesos){
+        if (pesos == null || pesos.length != TAM){
+            System.out.println("Pesos inválidos");
+            return 0;
+        }
+
+        double somaPonderada = 0;
+        int somaPesos = 0;
+
+
+        for (int i=0; i< TAM; i++){
+            somaPonderada += (this.notas[i] * pesos[i]);
+            somaPesos += pesos[i];
+        }
+
+        if (somaPesos == 0){
+            return 0;
+        }
+
+        return somaPonderada / somaPesos;
+
+    }
+
     public double menorNota(){
         double menor = notas[0];
         for(double nota : this.notas){
