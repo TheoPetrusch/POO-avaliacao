@@ -3,11 +3,11 @@ package Estudante;
 
 public class EstudanteArray {
 
-    public static Estudante[] filtrarAprovados(Estudante[] estudantes){
+    public static Estudante[] filtrarAprovados(Estudante[] estudantes, int[] pesos){
         int contAprovados = 0;
 
         for (Estudante estudante : estudantes){
-            if(estudante.calcularMedia() >= 6){
+            if(estudante.calcularMedia(pesos) >= 6){
                 contAprovados++;
             }
         }
@@ -20,7 +20,7 @@ public class EstudanteArray {
         int i = 0;
 
         for (Estudante estudante : estudantes){
-            if(estudante.calcularMedia() >= 6){
+            if(estudante.calcularMedia(pesos) >= 6){
                 aprovados[i] = estudante;
                 i++;
             }
